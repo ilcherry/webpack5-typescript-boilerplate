@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "version": "0.1",
+  "words": [
+    "webpackbar",
+    "esbuild",
+    "antd",
+    "favicons",
+    "svgs",
+    "nprogress",
+    "qinghuanI"
+  ],
+  "ignorePaths": [
+    "node_modules/**/*",
+    ".eslintrc.js",
+    ".prettier",
+    "src/assets/fonts/**/*"
+  ]
+}

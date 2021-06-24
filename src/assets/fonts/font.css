@@ -1,0 +1,23 @@
+@font-face {
+  font-family: if;
+  src: url('if.eot');
+  src: url('if.eot?3fd207c0#iefix') format('embedded-opentype'),
+    url('if.woff2?3fd207c0') format('woff2'),
+    url('if.woff?3fd207c0') format('woff'),
+    url('if.ttf?3fd207c0') format('truetype'),
+    url('if.svg?3fd207c0#if') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='if'],
+[class*=' if'] {
+  font-family: 'if' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
+.if-filter-icon::before {
+  content: '\ea01';
+}

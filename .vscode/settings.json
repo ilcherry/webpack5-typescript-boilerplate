@@ -1,0 +1,11 @@
+{
+  // editor
+  "editor.fontSize": 16,
+
+  // folder settings
+  "explorer.compactFolders": false,
+
+  // 
+  "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"],
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}
