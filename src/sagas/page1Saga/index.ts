@@ -1,5 +1,5 @@
-import { put, takeEvery } from '@redux-saga/core/effects';
 import { Actions } from 'actions/page1Action';
+import { put, takeEvery } from 'redux-saga/effects';
 
 import request from 'utils/request';
 
