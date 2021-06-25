@@ -1,10 +1,10 @@
 .div {
-  color: $yellowgreen !important;
-  font-size: 30px;
+  display: flex;
+  color: yellow !important;
 }
 
-
 .p {
-  font-size: 20px;
   display: flex;
+  font-size: 20px;
+  color: red;
 }

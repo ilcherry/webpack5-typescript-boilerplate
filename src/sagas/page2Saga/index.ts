@@ -22,5 +22,5 @@ export function* fetchCount(): Generator {
 }
 
 export function* watchFetchCount(): Generator {
-  yield takeEvery(Actions.RETRIEVE_ROLE, fetchCount);
+  yield takeEvery(Actions.RETRIEVE_COUNT, fetchCount);
 }

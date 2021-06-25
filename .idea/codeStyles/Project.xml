@@ -55,6 +55,15 @@
         <option name="SMART_TABS" value="true" />
       </indentOptions>
     </codeStyleSettings>
+    <codeStyleSettings language="SASS">
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="0" />
+    </codeStyleSettings>
+    <codeStyleSettings language="SCSS">
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+      <indentOptions>
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
     <codeStyleSettings language="TypeScript">
       <option name="RIGHT_MARGIN" value="100" />
       <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />

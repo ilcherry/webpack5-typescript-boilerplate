@@ -1,4 +1,5 @@
 const path = require('path');
+const esbuild = require('esbuild');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -46,6 +47,7 @@ const config = {
             options: {
               loader: 'tsx',
               target: 'es2015',
+              implementation: esbuild,
             },
           },
         ],

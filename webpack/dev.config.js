@@ -1,10 +1,9 @@
 const path = require('path');
-const { ESBuildPlugin } = require('esbuild-loader');
-const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const MockWebpackPlugin = require('mock-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const { ESBuildPlugin } = require('esbuild-loader');
 const baseConf = require('./base.config');
 const mockConfig = require('../mock');
 
@@ -35,14 +34,16 @@ const config = {
     },
   },
   plugins: [
-    new ESLintPlugin(),
+    // 启用构建缓存
+    new ESBuildPlugin(),
+    new ESLintPlugin({
+      extensions: ['.ts', '.tsx'],
+    }),
     new FaviconsWebpackPlugin(resolve('public/favicon.ico')),
     new MockWebpackPlugin({
       config: mockConfig,
       port: 5000,
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new ESBuildPlugin(),
   ],
 };
 

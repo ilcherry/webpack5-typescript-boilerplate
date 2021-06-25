@@ -26,6 +26,8 @@ module.exports = {
     'arrow-parens': 0,
     'operator-linebreak': 0,
     'global-require': 0,
+    'comma-dangle': 0,
+    'eol-last': 0,
 
     // react
     'react/jsx-filename-extension': [

@@ -2,7 +2,7 @@ module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [
-      'error',
+      2,
       'always',
       [
         'build',
@@ -18,8 +18,8 @@ module.exports = {
         'test',
       ],
     ],
-    'type-case': ['error', 'always'],
-    'type-empty': ['error', 'always'],
-    'subject-full-stop': ['error', 'always'],
+    'type-case': [2, 'never'],
+    'type-empty': [2, 'never'],
+    'subject-full-stop': [2, 'never'],
   },
 };
