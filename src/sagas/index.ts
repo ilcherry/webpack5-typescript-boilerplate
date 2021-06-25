@@ -1,4 +1,4 @@
-import { all, fork } from '@redux-saga/core/effects';
+import { all, fork } from 'redux-saga/effects';
 
 import { watchFetchRoles } from './page1Saga';
 import { watchFetchCount } from './page2Saga';
