@@ -5,7 +5,7 @@ import { Button, Space, Typography } from 'antd';
 import { page1Title } from 'constants/index';
 import { RootState } from 'reducers/index';
 
-import styles from './index.m.scss';
+import styles from './index.module.css';
 
 const { Title } = Typography;
 
@@ -21,11 +21,13 @@ const Page1: FC = () => {
 
   return (
     <Space direction="vertical">
-      <Title className={styles.p}>
+      <Title>
         {page1Title} --- {roles[0]}
       </Title>
 
-      <div ref={divRef}>this is div tag</div>
+      <div ref={divRef} className={styles.div}>
+        <h4>enable css module and cssnext</h4>
+      </div>
 
       <Space direction="horizontal">
         <Button onClick={() => history.push('/page2')}>to Page2</Button>
