@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Button, Space, Typography } from 'antd';
@@ -12,12 +12,21 @@ const { Title } = Typography;
 const Page1: FC = () => {
   const history = useHistory();
   const { roles } = useSelector((state: RootState) => state.page1Store);
+  const divRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log(divRef.current);
+  });
 
   return (
     <Space direction="vertical">
       <Title className={styles.p}>
         {page1Title} --- {roles[0]}
       </Title>
+
+      <div ref={divRef}>this is div tag</div>
+
       <Space direction="horizontal">
         <Button onClick={() => history.push('/page2')}>to Page2</Button>
         <Button>

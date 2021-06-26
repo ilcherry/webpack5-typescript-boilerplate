@@ -14,6 +14,7 @@
     "node_modules/**/*",
     ".eslintrc.js",
     ".prettier",
-    "src/assets/fonts/**/*"
+    "src/assets/fonts/**/*",
+    "src/tests/**/*"
   ]
 }

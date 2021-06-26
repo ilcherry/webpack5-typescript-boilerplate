@@ -2,7 +2,8 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const MockWebpackPlugin = require('mock-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
+// TODO: Temporarily disabled
+// const ESLintPlugin = require('eslint-webpack-plugin');
 const { ESBuildPlugin } = require('esbuild-loader');
 const baseConf = require('./base.config');
 const mockConfig = require('../mock');
@@ -36,9 +37,9 @@ const config = {
   plugins: [
     // 启用构建缓存
     new ESBuildPlugin(),
-    new ESLintPlugin({
-      extensions: ['.ts', '.tsx'],
-    }),
+    // new ESLintPlugin({
+    //   extensions: ['.ts', '.tsx'],
+    // }),
     new FaviconsWebpackPlugin(resolve('public/favicon.ico')),
     new MockWebpackPlugin({
       config: mockConfig,
