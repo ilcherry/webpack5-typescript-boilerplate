@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require('cssnano')],
+  plugins: ['cssnano', 'postcss-nesting', 'postcss-preset-env'],
 };

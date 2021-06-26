@@ -18,6 +18,11 @@
     "pnpm-lock.yaml": true,
     // "package.json": true,
     "cSpell.json": true
+  },
+
+  // required for cssnext 
+  "files.associations": {
+    "*.css": "postcss"
   }
 
 

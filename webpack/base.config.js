@@ -53,32 +53,21 @@ const config = {
         ],
       },
       {
-        test: /\.(sa|sc)ss$/i,
+        test: /\.css$/i,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-            },
-          },
-          'postcss-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              additionalData: '@import "~/src/styles/theme.scss";',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.css$/i,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: false,
+              modules: {
+                /*
+                  enables CSS modules or interoperable CSS format,
+                  for all files which satisfy /\.module(s)?\.\w+$/i.test(filename) condition
+
+                  detail visit: https://github.com/webpack-contrib/css-loader#auto
+                */
+                auto: true,
+              },
             },
           },
           'postcss-loader',
