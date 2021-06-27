@@ -1,6 +1,6 @@
 {
   "name": "webpack5-typescript-boilerplate",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "a simple react boilerplate by typescript",
   "main": "index.js",
   "scripts": {
