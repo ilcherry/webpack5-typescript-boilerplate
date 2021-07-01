@@ -29,6 +29,7 @@ module.exports = {
     'comma-dangle': 0,
     'eol-last': 0,
     'implicit-arrow-linebreak': 0,
+    indent: 0,
 
     // react
     'react/jsx-filename-extension': [

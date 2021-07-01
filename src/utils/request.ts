@@ -14,7 +14,7 @@ const instance: AxiosInstance = axios.create({
 
 instance.interceptors.response.use((response: AxiosResponse) => {
   const code = get(response, 'data.code', -1);
-  const data = get(response, 'data', {});
+  const data = get(response, 'data.data', {});
   const status = parseInt(code, 10);
 
   if (!isNaN(status) && status === 0) {
