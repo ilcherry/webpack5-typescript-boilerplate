@@ -1,12 +1,10 @@
 import { Actions, ActionType } from 'actions/page1Action';
 
-interface State {
-  roles: string[];
-}
-
-const initialState: State = {
-  roles: [],
+const initialState = {
+  roles: [] as string[],
 };
+
+type State = typeof initialState;
 
 const page1Reducer = (state = initialState, action: ActionType): State => {
   switch (action.type) {

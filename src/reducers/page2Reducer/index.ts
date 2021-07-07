@@ -1,10 +1,8 @@
 import { Actions, ActionType } from 'actions/page2Action';
 
-interface State {
-  count: number;
-}
+type State = typeof initialState;
 
-const initialState: State = {
+const initialState = {
   count: 0,
 };
 
