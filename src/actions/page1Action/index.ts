@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 export enum Actions {
   RETRIEVE_ROLE = 'RETRIEVE_ROLE',
   FETCH_ROLE = 'FETCH_ROLE',
@@ -13,9 +12,7 @@ interface FetchRolesAction {
   payload: FetchRolesActionPayload;
 }
 
-export const fetchRolesAction = (
-  payload: FetchRolesActionPayload
-): FetchRolesAction => ({
+export const fetchRolesAction = (payload: FetchRolesActionPayload) => ({
   type: Actions.FETCH_ROLE,
   payload,
 });

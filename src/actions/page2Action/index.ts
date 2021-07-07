@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 export enum Actions {
   FETCH_COUNT = 'FETCH_COUNT',
   RETRIEVE_COUNT = 'RETRIEVE_COUNT',
@@ -13,9 +12,7 @@ interface FetchCountAction {
   payload: FetchCountActionPayload;
 }
 
-export const fetchCountAction = (
-  payload: FetchCountActionPayload
-): FetchCountAction => ({
+export const fetchCountAction = (payload: FetchCountActionPayload) => ({
   type: Actions.FETCH_COUNT,
   payload,
 });

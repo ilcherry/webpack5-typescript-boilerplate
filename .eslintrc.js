@@ -20,7 +20,7 @@ module.exports = {
   extends: ['airbnb', 'eslint:recommended'],
   plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'jest'],
   rules: {
-    // base
+    // base rules
     'no-console': 2,
     'no-shadow': 0,
     'arrow-parens': 0,
@@ -48,9 +48,10 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
 
-    //
+    // typescript
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-unused-vars': 2,
 
     // simple-import-sort
     'simple-import-sort/imports': [
