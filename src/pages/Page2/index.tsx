@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Button, Space, Typography } from 'antd';
-import { RootState } from 'reducers/index';
+import type { RootState } from 'reducers/index';
 
 const { Title } = Typography;
 

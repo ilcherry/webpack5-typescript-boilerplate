@@ -1,4 +1,5 @@
-import { Actions, ActionType } from 'actions/page1Action';
+import type { ActionType } from 'actions/page1Action';
+import { Actions } from 'actions/page1Action';
 
 const initialState = {
   roles: [] as string[],

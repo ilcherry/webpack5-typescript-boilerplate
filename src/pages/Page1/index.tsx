@@ -1,9 +1,10 @@
-import React, { FC, useEffect, useRef } from 'react';
+import type { FC } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Button, Space, Typography } from 'antd';
 import { page1Title } from 'constants/index';
-import { RootState } from 'reducers/index';
+import type { RootState } from 'reducers/index';
 
 import styles from './index.module.css';
 

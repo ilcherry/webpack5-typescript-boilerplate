@@ -1,9 +1,10 @@
-import axios, {
+import type {
   AxiosInstance,
   AxiosPromise,
   AxiosRequestConfig,
   AxiosResponse,
 } from 'axios';
+import axios from 'axios';
 import { get, isNaN } from 'lodash';
 
 const instance: AxiosInstance = axios.create({

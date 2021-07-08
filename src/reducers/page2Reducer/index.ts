@@ -1,4 +1,5 @@
-import { Actions, ActionType } from 'actions/page2Action';
+import type { ActionType } from 'actions/page2Action';
+import { Actions } from 'actions/page2Action';
 
 type State = typeof initialState;
 

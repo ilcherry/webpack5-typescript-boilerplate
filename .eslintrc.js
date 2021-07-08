@@ -52,6 +52,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/no-unused-vars': 2,
+    '@typescript-eslint/consistent-type-imports': 2,
 
     // simple-import-sort
     'simple-import-sort/imports': [
