@@ -47,6 +47,7 @@ module.exports = {
     'import/export': 2,
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
+    'import/prefer-default-export': 0,
 
     // typescript
     'no-use-before-define': 'off',

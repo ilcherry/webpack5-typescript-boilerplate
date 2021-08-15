@@ -17,6 +17,8 @@ const sagaMiddleware = createSagaMiddleware();
 const store = createStore(reducers, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(rootSaga);
 
+export type AppDispatch = typeof store.dispatch;
+
 const App: FC = () => {
   useProgress();
 
